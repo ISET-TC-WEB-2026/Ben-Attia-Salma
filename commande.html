@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="img" href="images/link.jpg">
+        <title>Validation de commande - BabyCare</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/Logo.png" width="200">
+            <h1>BabyCare</h1>
+            <p>Le soin et la douceur pour votre bébé</p>
+
+            <nav>
+                <a href="index.html">Acceuil</a>
+                <a href="produits.html">catalogue</a>
+                <a href="panier.html">Panier</a>
+            </nav>
+        </header>
+        <hr>
+        
+        <main>
+            <table>
+                <tr>
+                    <td>
+                        <h2>Finalisez votre commande !</h2>
+                        <p>Veuillez remplir les informations ci-dessous pour valider vos achats.</p>
+                    </td>
+                    <td>
+                        <img src="images/teddy.jpg" width="250">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+
+            <form action="confirmation.html" method="POST">
+                
+            
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" placeholder="Ex.Ben Attia" required ><br><br>
+
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ex.Salma" required><br><br>
+
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Ex.benattiasalma168@gmail.com" required><br><br>
+
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Ex.123456789" required><br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Adresse de livraison</legend>
+                    
+                    <label for="adresse">Adresse complète :</label><br>
+                    <textarea id="adresse" name="adresse" rows="4" cols="40" placeholder="Veuillez introduire votre adresse.." required></textarea><br><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Mode de livraison -->
+                <fieldset>
+                    <legend>Mode de livraison</legend>
+                    
+                    <input type="radio" id="standard" name="livraison" value="standard" checked>
+                    <label for="standard">Livraison standard (3-5 jours ouvrés)</label><br>
+
+                    <input type="radio" id="express" name="livraison" value="express">
+                    <label for="express">Livraison express (24-48h)</label><br>
+                </fieldset>
+
+                <br>
+
+                <!-- Mode de paiement fictif -->
+                <fieldset>
+                    <legend>Mode de paiement (Fictif)</legend>
+                    
+                    <label for="paiement">Choisissez votre moyen de paiement :</label><br>
+                    <select id="paiement" name="paiement" required>
+                        <option value="">-- Veuillez choisir --</option>
+                        <option value="carte">Carte bancaire (fictive)</option>
+                        <option value="paypal">Compte PayPal (fictif)</option>
+                        <option value="livraison">Paiement à la livraison</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <!-- Bouton de validation -->
+                <button type="submit">Valider la commande</button>
+
+            </form>
+
+            <hr>
+            <footer>
+                <p>@ 2026 BabyCare - Tous droits réservés.</p>
+                <a href="index.html">Retourner à la page d'accueil</a>
+            </footer>
+        </main>
+    </body>
+</html>
